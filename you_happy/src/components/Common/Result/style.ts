@@ -51,9 +51,18 @@ export const Link = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  height: 100px;
+  /* height: 100px; */
   a {
     color: black;
     text-decoration-line: none;
   }
+`;
+
+export const Tong = styled.div`
+  display: flex;
+  justify-content: center;
+  img {
+    width: 400px;
+  }
+  /* width: 300px; */
 `;

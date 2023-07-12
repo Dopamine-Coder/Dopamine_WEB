@@ -78,8 +78,8 @@ const Survey = () => {
         </S.SurveyPageBox>
         <S.SurveyList>{getquestionLists?.text}</S.SurveyList>
         <S.SurveyStar>
-          <S.SureyBad>{getquestionLists?.bad}</S.SureyBad>
-          <div>
+          {getquestionLists?.bad}
+          <div className="test">
             <StarRating
               totalStars={5}
               initialRating={rate}
@@ -88,7 +88,7 @@ const Survey = () => {
               }}
             />
           </div>
-          <S.SureyGood>{getquestionLists?.good}</S.SureyGood>
+          {getquestionLists?.good}
         </S.SurveyStar>
       </S.SurveyContainer>
     </>

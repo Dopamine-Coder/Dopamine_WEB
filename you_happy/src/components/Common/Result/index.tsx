@@ -1,6 +1,7 @@
 import { useGetStarTotal } from "../../../querys/Question/Question.query";
 import * as R from "./style";
 import im from "../../../assets/img/im.jpg";
+import tong from "../../../assets/img/tong.png";
 const Result = () => {
   const { data: getStarTotal } = useGetStarTotal();
 
@@ -30,6 +31,12 @@ const Result = () => {
             산책로 추천 : {getStarTotal?.link}
           </a>
         </R.Link>
+        <R.ContentContainer>
+          <R.ContentTitle ismargin={true}>나와 같은 사람들은?</R.ContentTitle>
+        </R.ContentContainer>
+        <R.Tong>
+          <img src={tong} />
+        </R.Tong>
       </R.ResultContainer>
     </div>
   );
