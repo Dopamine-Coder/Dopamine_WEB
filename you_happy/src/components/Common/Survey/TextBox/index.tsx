@@ -2,11 +2,12 @@ import React, { useState } from "react";
 import * as T from "./style";
 import { useRecoilState } from "recoil";
 import { SurveyStarAtom } from "../../../../stores/SurveyStotes";
+import { Params, useNavigate, useParams } from "react-router-dom";
 
 interface RatingProps {
   totalStars: number;
   initialRating?: number;
-  onChangeRating?: (rating: number) => void;
+  onChangeRating: (rating: number) => void;
 }
 
 const StarRating: React.FC<RatingProps> = ({
@@ -15,18 +16,16 @@ const StarRating: React.FC<RatingProps> = ({
   onChangeRating,
 }) => {
   const [rating, setRating] = useState(initialRating);
-  const [Page, setPage] = useRecoilState<number>(SurveyStarAtom);
 
-  const handleStarClick = (selectedRating: number) => {
-    setRating(selectedRating);
-    if (onChangeRating) {
-      onChangeRating(selectedRating);
-    }
-  };
+  const { page }: Readonly<Params<"page">> = useParams();
 
-  const handlePageChange = (pagelist: any) => {
-    setPage(pagelist);
-  };
+  const navigation = useNavigate();
+
+  // const handleStarClick = (selectedRating: number) => {
+  //   setRating(selectedRating);
+  //   if (onChangeRating) {
+  //   }
+  // };
 
   return (
     <T.StarBox>
@@ -36,17 +35,15 @@ const StarRating: React.FC<RatingProps> = ({
           <T.StarIcon
             key={starValue}
             onClick={() => {
-              handleStarClick(starValue);
-              handlePageChange(Page + 1);
+              navigation(`/survel/${Number(page) + 1}`);
+              onChangeRating(starValue);
             }}
             style={{
               cursor: "pointer",
               color: starValue <= rating ? "gold" : "#D9D9D9",
               fontSize: "30pxs",
             }}
-          >
-            ★
-          </T.StarIcon>
+          ></T.StarIcon>
         );
       })}
     </T.StarBox>

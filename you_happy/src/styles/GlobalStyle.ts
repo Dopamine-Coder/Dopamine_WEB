@@ -1,6 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-// @ts-ignore
+
 // import "./font.css";
 // import test from "../font/"
 // import YeongdeokSnowCrab from "../font/"

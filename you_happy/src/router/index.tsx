@@ -7,7 +7,7 @@ export default function Router() {
   return (
     <Routes>
       <Route path="/" element={<StartPage />} />
-      <Route path="/survel" element={<SurveyPage />} />
+      <Route path="/survel/:page" element={<SurveyPage />} />
     </Routes>
   );
 }

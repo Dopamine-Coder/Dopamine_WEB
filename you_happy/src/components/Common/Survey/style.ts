@@ -7,8 +7,24 @@ export const SurveyPageBox = styled.div`
   margin-top: 3%;
   gap: 100px;
 `;
-export const SurveyList = styled.div``;
-export const SurveyStar = styled.div``;
+export const SurveyList = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 4.5%;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 80px;
+`;
+export const SurveyStar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+
+  .test {
+    width: 40%;
+  }
+`;
 
 export const Button = styled.div`
   display: flex;
@@ -19,7 +35,6 @@ export const Button = styled.div`
     font-size: 26px;
     margin-top: -3px;
   }
-  /* align-items: center; */
 `;
 export const List = styled.div`
   display: flex;

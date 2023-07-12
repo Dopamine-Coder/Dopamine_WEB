@@ -10,8 +10,9 @@ export const StarBox = styled.div`
 `;
 
 export const StarIcon = styled(AiFillStar)`
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
+  font-size: 50px;
+  gap: 0px;
+  width: 80px;
+  height: 80px;
   cursor: pointer;
 `;
