@@ -14,18 +14,21 @@ export const SurveyList = styled.div`
   font-size: 20px;
   font-weight: bold;
   margin-bottom: 80px;
+  .test {
+    width: 40%;
+  }
 `;
 export const SurveyStar = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-around;
   font-size: 20px;
-
-  .test {
-    width: 40%;
-  }
 `;
 
+export const SureyBad = styled.div``;
+
+export const SureyGood = styled.div``;
 export const Button = styled.div`
   display: flex;
   align-items: center;

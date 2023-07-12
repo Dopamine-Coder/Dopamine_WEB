@@ -35,6 +35,7 @@ export const StartInputBox = styled.div`
     border: 0;
     border-radius: 10px;
     margin-bottom: 30px;
+    text-align: center;
   }
   input::-webkit-input-placeholder {
     text-align: center;
