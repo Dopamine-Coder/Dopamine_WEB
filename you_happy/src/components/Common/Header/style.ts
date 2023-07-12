@@ -8,16 +8,9 @@ export const Header = styled.div`
   border-bottom: 1px solid #e2e2e2;
 `;
 export const Logo = styled.div`
-  /* font-size: 24px; */
-  /* font-weight: bold; */
-
   img {
     width: 130px;
   }
-
-  /* font-family: yeongdeok; */
-  /* font-family: "yeongdeok"; */
-  /* font-weight: bold; */
 `;
 export const TestPageContainer = styled.div``;
 export const PostPageContainer = styled.div``;

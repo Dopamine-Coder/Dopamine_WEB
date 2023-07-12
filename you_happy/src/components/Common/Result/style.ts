@@ -4,7 +4,7 @@ export const ResultContainer = styled.div``;
 export const TitleBox = styled.div`
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+
   align-items: center;
   margin-top: 4%;
 `;
@@ -56,5 +56,4 @@ export const Link = styled.div`
     color: black;
     text-decoration-line: none;
   }
-  /* color: black; */
 `;

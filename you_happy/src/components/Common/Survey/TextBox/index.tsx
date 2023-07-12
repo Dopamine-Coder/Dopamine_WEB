@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import * as T from "./style";
-import { useRecoilState } from "recoil";
-import { SurveyStarAtom } from "../../../../stores/SurveyStotes";
+
 import { Params, useNavigate, useParams } from "react-router-dom";
 
 interface RatingProps {
@@ -20,12 +19,6 @@ const StarRating: React.FC<RatingProps> = ({
   const { page }: Readonly<Params<"page">> = useParams();
 
   const navigation = useNavigate();
-
-  // const handleStarClick = (selectedRating: number) => {
-  //   setRating(selectedRating);
-  //   if (onChangeRating) {
-  //   }
-  // };
 
   return (
     <T.StarBox>

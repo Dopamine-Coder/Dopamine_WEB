@@ -15,7 +15,7 @@ const Header = () => {
         </H.LogoBox>
 
         <H.PageContainer>
-          <H.TestPageContainer onClick={() => navigate("/survel")}>
+          <H.TestPageContainer onClick={() => navigate("/survel/1")}>
             행복 테스트
           </H.TestPageContainer>
           <H.PostPageContainer>행복 게시판</H.PostPageContainer>

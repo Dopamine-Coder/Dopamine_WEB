@@ -11,7 +11,7 @@ export default function PageTemplate({ children }: Props) {
     <>
       <GlobalStyle />
       <Header />
-      {/* </GlobalStyle> */}
+
       {children}
     </>
   );

@@ -11,8 +11,6 @@ const Survey = () => {
   const [rates, setRates] = useRecoilState(SurveyStarAtom);
   const navigation = useNavigate();
 
-  const [Text, setText] = useState<string>("");
-
   const { page }: Params<string> = useParams();
 
   const { data: getquestionLists } = useGetQuestion({
@@ -92,7 +90,6 @@ const Survey = () => {
           </div>
           {getquestionLists?.good}
         </S.SurveyStar>
-        <div>Total Rate: {totalRate}</div>
       </S.SurveyContainer>
     </>
   );

@@ -1,12 +1,6 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
-
-// import "./font.css";
-// import test from "../font/"
-// import YeongdeokSnowCrab from "../font/"
 import Yeongdeok from "../font/YeongdeokSnowCrab.ttf";
-// import Yeongdeok from "../../assets/font/YeongdeokSnowCrab.ttf";
-// import Yeongdeok from "."
 
 const GlobalStyle = createGlobalStyle`
  
