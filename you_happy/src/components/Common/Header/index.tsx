@@ -10,7 +10,7 @@ const Header = () => {
       <H.Header>
         <H.LogoBox>
           <H.Logo>
-            <img src={Logo} />
+            <img src={Logo} onClick={() => navigate("/")} />
           </H.Logo>
         </H.LogoBox>
 

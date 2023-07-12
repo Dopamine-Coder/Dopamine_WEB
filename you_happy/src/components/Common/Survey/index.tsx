@@ -73,7 +73,7 @@ const Survey = () => {
             이전으로
           </S.Button>
           <S.List>{page}/20</S.List>
-          <S.Button>
+          <S.Button onClick={() => navigation("/result")}>
             결과보기
             <AiOutlineRight className="icon" />
           </S.Button>

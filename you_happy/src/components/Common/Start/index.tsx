@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import * as S from "./style";
 
 const Start = () => {
+  const navigate = useNavigate();
   return (
     <div>
       <S.StartPageContainer>
@@ -29,7 +31,9 @@ const Start = () => {
         </S.StartExplainBox>
         <S.StartInputBox>
           <input placeholder="닉네임을 입력해 주세요" className="test"></input>
-          <S.Button>테스트 시작하기</S.Button>
+          <S.Button onClick={() => navigate("/survel/1")}>
+            테스트 시작하기
+          </S.Button>
         </S.StartInputBox>
       </S.StartPageContainer>
     </div>
